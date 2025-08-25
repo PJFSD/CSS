@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Delay Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: teal;
+      transition: all 2s ease;   /* smooth transition in 2s */
+      transition-delay: 1s;      /* wait 1 second before starting */
+    }
+
+    /* On hover */
+    .box:hover {
+      width: 200px;
+      background: tomato;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS transition-delay Demo</h2>
+  <p>Hover over the box. The change will start after <b>1 second delay</b>.</p>
+  <div class="box"></div>
+</body>
+</html>

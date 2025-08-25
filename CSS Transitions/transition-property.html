@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Property Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      background: teal;
+      transition-property: width;    /* animate only width */
+      transition-duration: 2s;       /* takes 2 seconds */
+    }
+
+    .box:hover {
+      width: 200px;                  /* this will animate */
+      background: tomato;            /* this will change instantly (no transition) */
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS transition-property Demo</h2>
+  <p>Hover over the box. Only the <b>width</b> animates, but the <b>color</b> changes instantly.</p>
+  
+  <div class="box"></div>
+</body>
+</html>

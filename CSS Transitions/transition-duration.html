@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Duration Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      background: steelblue;
+      transition-property: width, background-color;
+      transition-duration: 3s; /* transition will take 3 seconds */
+    }
+
+    .box:hover {
+      width: 200px;
+      background: tomato;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS transition-duration Demo</h2>
+  <p>Hover over the box. It will take <b>3 seconds</b> to complete the transition.</p>
+  
+  <div class="box"></div>
+</body>
+</html>
